@@ -316,20 +316,32 @@ atom-text-editor {
 
 // for php
 &.syntax--php{
-
-
   &.syntax--function{
     color: @red;
-
-
     &.syntax--name{
       color: @blue;
     }
-
   }
   &.syntax--bracket{
     color: @syntax-text-color !important;
   }
+}
+// for json
+&.syntax--json{
+
+  &.syntax--key{
+    color: @orange;
+
+    .syntax--punctuation{
+      color: @orange;
+    }
+  }
+  &.syntax--structure{
+    .syntax--array{
+      color: @syntax-text-color !important;
+    }
+  }
+
 }
 
 
